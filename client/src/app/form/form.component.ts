@@ -57,7 +57,7 @@ export class FormComponent implements OnInit {
     this.apollo.watchQuery<_Query>({
       query: gql`
       {
-        book(id:${_q}){
+        book(id:"${_q}"){
           id
           title
           chapters
